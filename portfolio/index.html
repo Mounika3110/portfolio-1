@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Mounika-Portfolio</title>
-                    <link rel="stylesheet" href="index.css">
-                    <script src="index.js"></script>
+       <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Mounika Portfolio</title>
+              <link rel="stylesheet" href="index.css">
+              <script src="index.js"></script>
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
               </head>
-<body>
-<div id="header">
-<div class="container">
-<nav>
-<img src="./Mounika.png" class="logo">       
-             <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#works">My Work</a></li>
-                    <li><a href="#">Contact me</a></li>
-                    <li><a href="#">Download resume</a></li>
-                    <li><a href="#"><i class="fa-regular fa-moon"></i></a></li>
-</ul>
-                    </nav>
-                    <div class="content">
-                     <h1 data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">Hey I'm <span>Uppalapati Mounika Bindu</span></h1>
-                     <div class="typewriter" data-aos="fade-right" data-aos-duration="800" data-aos-delay="900">I'm a <spam style="font-size: 40px;"> 𝚄𝙸/𝚄𝚇 </spam><span></span>
-                     </div>
-</div></div> </div>
-
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Mounika</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><i class="fa-solid fa-house m-2" style="color: #ff00bb;"></i><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><i class="fa-solid fa-address-card" style="color: #ff00bb;></i><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#title">My Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#work">My Works</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact Me</a></div>
+                <div class="link contact-btn" class="new" ><a href="./Resume(Mounika).pdf" download>Download Resume</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">My Skills</a>
+                <a href="#work">My Works</a>
+                <a href="#contact">Contact Me</a>
+                <a href="">Download Resume</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+       <div class="main-container">
+           <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+               <img src="./html5.png" alt="">
+           </div>
+           <div class="content-social">
+               <div class="content">
+                   <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Mounika Bindu Uppalapati</span></h1>
+                   <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+               </div>
+               <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                   <a href="https://github.com/Mounika3110" ><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.facebook.com/mounika.varma.790693/"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.linkedin.com/in/mounika-bindu-uppalapati-724822251/"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://x.com/mounika31110"><i class="fa-brands fa-x-twitter"></i></a>
+               </div>
+           </div>
+       </div>  
+   </section>
+   
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
 <!----------- about------------->
 <div id="about">
 <div class="container">
@@ -42,24 +84,31 @@
                      <p>Hello! I’m Uppalapati Mounika Bindu, a UI/UX Developer who thrives at the intersection of design and development. With a passion for both the aesthetic side of design and the technical aspects of front-end development, I specialize in creating seamless, user-friendly experiences that work across all devices. My goal is to bridge the gap between design and development by ensuring that the final product not only looks great but is also functional, fast, and accessible.
                      I have a keen eye for detail and a deep understanding of how users interact with digital products.</p>
               <div class="tab-titles">
-                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('project')">Projects</p>
               </div>              
-              <div class="tab-contents active-tab" id="skills">
+              <div class="tab-contents active-tab" id="education">
+                                  <ul>
+                                         <li><span>2020-2024</span><br>Lendi Institute Of Engineering and Techonology </li>
+                                         <li><span>2018-2020</span><br>Narayana Junior College</li>
+                                         <li><span>2017-2018</span><br>St'Joshep's English Medium High School</li>
+                                  </ul>
+                           </div>
+              <div class="tab-contents" id="skills">
                      <ul>
                             <li><span>UI/UX</span><br>Designing & Developing Web/App interfaces </li>
-                            <li><span>Web Development</span><br>Web app Development </li>
                      </ul>
               </div>
- <div class="tab-contents" id="education">
+              <div class="tab-contents" id="project">
                      <ul>
-                            <li><span>2020-2024</span><br>Lendi Institute Of Engineering and Techonology </li>
-                            <li><span>2018-2020</span><br>Narayana Junior College</li>
-                            <li><span>2017-2018</span><br>St'Joshep's English Medium High School</li>
+                            <li><span>PyAssist: Building a Python-Based Personal Assistant (MINI)
+                            </span><br>Developed and PyAssist, a Python-based personal assistant, incorporating technologies like Speech Recognition, API, and Pyttsx3 </li>
+                            <li><span>Data-Driven Due Diligence: Uncovering Business Potential (MINOR)</span><br>Spearheaded a project focused on implementing data-driven due diligence for entrepreneurs across diverse domains, including education and real estate</li>
                      </ul>
               </div>
               </div>
-                    </div>
+                    </div>         
 </div>
 <!-------------------------------Skills--------------------------------------->
 <div id="skills">
@@ -67,106 +116,149 @@
               <h1>My Skills</h1>
 </div>
 <div class="container">
-<div class="row">
-       <div class="col-3">
-              <img src="./html5.png" style="height: 50%; width: 100%;">
-              <h3>HTML5</h3>
-              <p>I have a strong foundation in HTML and use it to create clean, well-structured web pages that provide excellent user experiences.</p>
+       <div class="skill-end">
+              <h3>Frontend</h3>
        </div>
-       <div class="col-3">
-              <img src="./css.avif" style="width: 100%; height: 50%;">
-              <h3>CSS</h3>
-              <p>CSS enables me to style web pages with precision, creating responsive designs and modern layouts.</p>
-       </div>      
-        <div class="col-3">
-              <img src="./javascript.png" style="width: 100%; height: 50%;">
-              <h3>JavaScript</h3>
-              <p>JavaScript powers dynamic interactivity and enhances user experience on websites.</p>
-       </div>     
-         <div class="col-3">
-              <img src="./react.jfif" style="width: 100%;height: 50%;">
-              <h3>React</h3>
-              <p>React helps me build interactive user interfaces efficiently with reusable components.</p>
-       </div>
-</div>
-<div class="row">
-       <div class="col-3">
-              <img src="./Photoshop.avif" width="100%" height="40%">
-              <h3>Photoshop</h3>
-              <p>Photoshop helps me create visually compelling graphics and edit images for web design projects.</p>
-       </div>
-       <div class="col-3">
-              <img src="./illu.png" width="100%" height="40%">
-              <h3>Illustrator</h3>
-              <p>Illustrator enables me to design vector-based graphics and create illustrations for logos and branding.</p>
-       </div>
-       <div class="col-3">
-              <img src="./figma.webp" width="100%" height="40%" >
-              <h3>Figma</h3>
-              <p>Figma allows me to collaborate with teams on UI/UX design, creating prototypes and interactive mockups.</p>
-       </div>
-       <div class="col-3">
-              <img src="./word.png" width="100%" height="40%">
-              <h3>WordPress</h3>
-              <p>WordPress lets me build and manage websites, making content management easy with customizable themes and plugins.</p>
-       </div>
-</div>
-              </div> 
-<!-------------------------------Work--------------------------------------->
-<div id="work">
-       <div class="title">
-              <h1>My Works</h1>
-</div> 
-<div class="container">
-<div class="work-titles">
-       <p class="tab-links active-link" onclick="opentab('all')">All</p>
-       <p class="tab-links" onclick="opentab('developer')">Developer</p>
-       <p class="tab-links" onclick="opentab('designer')">Designer</p>
-       <p class="tab-links" onclick="opentab('figma')">Figma</p>
-</div> 
-              <div class="tab-contents active-tab" id="all">
-       <div class="works">
-<div class="work-content">
-       <div class="text1">
-       <h3 style="background: transparent;">HTML,CSS,Bootstrap</h3>
-       <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
-       <a href="https://github.com/Bindu31/html.git" class="btn btn-danger" target="_blank">Source Code</a>
-                                   </div>
-                            </div>
-                     </div>
-       </div>
-       </div>
-</div>
-
-<!---- <a href="https://bindu31.github.io/html/"><img src="./hcb.webp" width="30%"></a>
-<a href="https://mounika3110.github.io/JSwork/"><img src="./js.jpg" width="30%"></a>
-img src="https://ascentcomputer.co.in/wp-content/uploads/2021/06/html-css.jpg" -->
-
-<!-------------------------------contact--------------------------------------->
-<div id="contact">
-       <div class="container">
-              <div class="row">
-                     <div class="contact-left">
-                            <h1 class="sub-title">Contact Me</h1>
-                            <p><i class="fa-regular fa-paper-plane"></i>mounikavarma2245@gmail.com</p>
-                            <p><i class="fa-regular fa-phone"></i>7702347213</p>
-                            <div class="soical-icons">
-                                   <a href="https://www.facebook.com/mounika.varma.790693/"><i class="fa-brands fa-facebook"></i></a>
-                                   <a href="https://x.com/mounika31110"><i class="fa-brands fa-square-twitter"></i></a>
-                                   <a href="https://www.instagram.com/mounika_varma31/"><i class="fa-brands fa-instagram"></i></a>
-                                   <a href="https://www.linkedin.com/in/mounika-bindu-uppalapati-724822251/"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                     </div>
-                     <div class="contact-right">
-                            <form>
-                                   <input type="text" name="Name" placeholder="Your Name" required>
-                                   <input type="email" name="email" placeholder="Your Email" required>
-                                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                   <button type="submit">Submit</button>
-                            </form>
-                     </div>
+       <div class="skills-container">
+              <div class="skill-card">
+                     <img src="https://static-00.iconduck.com/assets.00/html-icon-1451x2048-69sehqrp.png">
+                     <h3>HTML</h3>
+              </div>
+              <div class="skill-card">
+                     <img src="https://w7.pngwing.com/pngs/224/77/png-transparent-website-web-internet-css-style-css3-technology-social-media-logos-i-flat-colorful-icon.png">
+                     <h3>CSS</h3>
+              </div>              <div class="skill-card">
+                     <img src="https://www.researchgate.net/publication/385907322/figure/fig2/AS:11431281291221821@1731945210103/JavaScript-Source-JavaScript-Icon-nd.jpg">
+                     <h3>JavaScript</h3>
+              </div>              <div class="skill-card">
+                     <img src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png">
+                     <h3>React</h3>
+              </div>
+              <div class="skill-card">
+                     <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png">
+                     <h3>WordPress</h3>
               </div>
        </div>
 </div>
+<div class="skill-end ">
+       <h3>Backend</h3>
+</div>
+<div class="skills-container">
+       <div class="skill-card">
+              <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png">
+              <h3>Python</h3>
+       </div>
+       <div class="skill-card">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRup1AjLs73BTKaUXRedm-RiOMsbfGQ6zucUg&s">
+              <h3>SQL</h3>
+       </div>
+</div>
+</div>
+<div class="skill-end ">
+       <h3>Designing</h3>
+</div>
+<div class="skills-container">
+       <div class="skill-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/800px-Adobe_Photoshop_CC_icon.svg.png">
+              <h3>Adobe Photoshop</h3>
+       </div>
+       <div class="skill-card">
+              <img src="https://static-00.iconduck.com/assets.00/figma-icon-2048x2048-lvgft610.png">
+              <h3>Figma</h3>
+       </div>
+       <div class="skill-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png">
+              <h3>Illustrator </h3>
+       </div>
+</div>
+</div>
+</div></div> 
+<!-------------------------------Work--------------------------------------->
+<div id="works">
+       <div class="works-content">
+           <h1>My Works</h1>
+       </div>
+   
+       <div class="projects_filter">
+           <ul class="filter list">
+               <li class="active" data-content="all">All</li>
+               <li data-content="development">Development Works</li>
+               <li data-content="designing">Designing Works</li>
+               <li data-content="figma">Figma Works</li>
+           </ul>
+       </div>
+          <div class="workcontent-section d-flex">
+           <div class="workcontent all active m-4">
+              <h3 style="background: transparent;">HTML,CSS,Bootstrap</h3>
+              <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
+              <a href="https://github.com/Bindu31/html.git" class="btn btn-danger" target="_blank">Source Code</a>
+           </div>
+           <div class="workcontent all active m-4">
+              <h3 style="background: transparent;">JavaScript</h3>
+              <a href="https://mounika3110.github.io/jsworks/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
+              <a href="https://github.com/Mounika3110/jsworks.git" class="btn btn-danger" target="_blank">Source Code</a>
+           </div>          
+            <div class="workcontent all active m-4">
+              <h3 style="background: transparent;">React</h3>
+              <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
+              <a href="https://github.com/Bindu31/html.git" class="btn btn-danger" target="_blank">Source Code</a>
+           </div>         
+             <div class="workcontent all active m-4">
+              <h3 style="background: transparent;">Figma</h3>
+              <a href="https://www.figma.com/design/stb8D3YyIif0FlCWDjrJKg/instagram?node-id=0-1&p=f&t=YBfEQzUbgUEYpgGb-0" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
+              <a href="https://www.figma.com/proto/stb8D3YyIif0FlCWDjrJKg/instagram?node-id=12-85&p=f&t=YBfEQzUbgUEYpgGb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=12%3A85" class="btn btn-danger" target="_blank">Source Code</a>
+           </div>
+          </div>
+           <div class="workcontent development">
+               <h2>Development Works</h2>
+               <p>These are the development-related projects I have worked on.</p>
+           </div>
+           <div class="workcontent designing">
+               <h2>Designing Works</h2>
+               <p>These are the designing-related projects I have worked on.</p>
+           </div>
+           <div class="workcontent figma">
+               <h2>Figma Works</h2>
+               <p>These are my Figma-based design works.</p>
+           </div>
+       </div>
+   </div>
+      <script>
+                    document.querySelectorAll('.projects_filter li').forEach(tab => {
+              tab.addEventListener('click', function() {
+                  document.querySelectorAll('.projects_filter li').forEach(tab => {
+                      tab.classList.remove('active');
+                  });
+                            this.classList.add('active');
+                  const contentType = this.getAttribute('data-content');
+                  document.querySelectorAll('.workcontent').forEach(content => {
+                      content.classList.remove('active');
+                  });
+                            document.querySelector(`.workcontent.${contentType}`).classList.add('active');
+              });
+          });
+
+      </script>
+<!-------------------------------contact--------------------------------------->
+<div id="contact">
+       <div class="container">
+              <h1 class="sub-title">Contact Me</h1>
+          <div class="row">
+             <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane" style="color: #ff00bb;"></i>mounikavarma2245@gmail.com</p>
+                <p><i class="fa-solid fa-phone" style="color: #ff00bb;"></i></i>7702347213</p>
+             </div>
+             <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                   <button type="submit">Submit</button>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+    
 </body>
 </html>
