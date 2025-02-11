@@ -432,6 +432,7 @@
   }
   .workcontent-section {
     margin-top: 40px;
+    display: flex;
   }
   .workcontent.active {
     display: block;
@@ -450,7 +451,8 @@
     display: none;
   }
   .workcontent img{
-    width: 100%;
+    width: 250px;
+    height: 250px;
     border-radius:10px ;
     display: block;
     transition: transform 0.5s;
@@ -482,6 +484,7 @@
   justify-content: space-between;
   gap: 20px; 
   margin-top: 20px;
+  align-items: center;
 }
 
 .layer a {
