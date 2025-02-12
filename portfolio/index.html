@@ -177,130 +177,74 @@
        <div class="works-content">
            <h1>My Works</h1>
        </div>
-   
+    
        <div class="projects_filter">
            <ul class="filter list">
-               <li class="active" data-content="all">All</li>
-               <li data-content="development">Development Works</li>
-               <li data-content="designing">Designing Works</li>
-               <li data-content="figma">Figma Works</li>
+               <li class="active" id="all" onclick="filterWorks('all')">All</li>
+               <li id="development" onclick="filterWorks('development')">Development Works</li>
+               <li id="designing" onclick="filterWorks('designing')">Designing Works</li>
+               <li id="figma" onclick="filterWorks('figma')">Figma Works</li>
            </ul>
        </div>
-          <div class="workcontent-section" style="margin-left: 10%; ">
-           <div class="workcontent all active m-4">
-              <img src="https://img-c.udemycdn.com/course/750x422/3859486_e86f.jpg">
-              <div class="layer">
-                     <h3 style="background: transparent; margin-top: 50px;">HTML, CSS, Bootstrap</h3>
-                     <div class="button-container" style="background: transparent">
-                     <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
-                     <a href="https://github.com/Bindu31/html.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+    
+       <div class="workcontent-section" id="workcontent-section">
+           <div class="workcontent all development active m-4">
+               <img src="https://img-c.udemycdn.com/course/750x422/3859486_e86f.jpg">
+               <div class="layer">
+                   <h3 style="background: transparent; margin-top: 50px;">HTML, CSS, Bootstrap</h3>
+                   <div class="button-container" style="background: transparent">
+                       <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
+                       <a href="https://github.com/Bindu31/html.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+                   </div>
+               </div>
            </div>
-           </div></div>
-           <div class="workcontent all active m-4">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRrG1Ie_kYWcgjItUeWrad9a1xuZrsQYZB3g&s">
-              <div class="layer">
-                     <h3 style="background: transparent; margin-top: 50px;">JavaScript</h3>
-                     <div class="button-container" style="background: transparent">
-                     <a href="https://mounika3110.github.io/jsworks/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
-                     <a href="https://github.com/Mounika3110/jsworks.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+    
+           <div class="workcontent all development active m-4">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRrG1Ie_kYWcgjItUeWrad9a1xuZrsQYZB3g&s">
+               <div class="layer">
+                   <h3 style="background: transparent; margin-top: 50px;">JavaScript</h3>
+                   <div class="button-container" style="background: transparent">
+                       <a href="https://mounika3110.github.io/jsworks/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
+                       <a href="https://github.com/Mounika3110/jsworks.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+                   </div>
+               </div>
            </div>
-           </div></div>
-           <div class="workcontent all active m-4">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAchwXzctzezPSzQA7e-deh5OVLHKtQjUpHw&s">
-              <div class="layer">
-                     <h3 style="background: transparent; margin-top: 50px;">Reactjs</h3>
-                     <div class="button-container" style="background: transparent">
-                     <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187); " target="_blank">Preview</a>
-                     <a href="https://github.com/Bindu31/html.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+    
+           <div class="workcontent all development active m-4">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAchwXzctzezPSzQA7e-deh5OVLHKtQjUpHw&s">
+               <div class="layer">
+                   <h3 style="background: transparent; margin-top: 50px;">Reactjs</h3>
+                   <div class="button-container" style="background: transparent">
+                       <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
+                       <a href="https://github.com/Bindu31/html.git" class="btn btn-light" style="color:rgb(255, 0, 187);" target="_blank">Source Code</a>
+                   </div>
+               </div>
            </div>
-           </div></div>
-           <div class="workcontent all active m-4">
-              <img src="./anirudhpost.jpg">
-              <div class="layer">
-                <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
-                <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
-              </div>
-            </div>
-            </div>
-
-            <div id="additionalContent" style="display: none;">
-              <div class="workcontent-section" style="margin-left: 10%; ">
-           <div class="workcontent all active m-4">
-              <img src="./anirudhpost.jpg">
-              <div class="layer">
-                <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
-                <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
-              </div>
-            </div>
-            <div class="workcontent all active m-4">
-              <img src="./anirudhpost.jpg">
-              <div class="layer">
-                <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
-                <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
-              </div>
-            </div>
-            <div class="workcontent all active m-4">
-              <img src="./anirudhpost.jpg">
-              <div class="layer">
-                <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
-                <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
-              </div>
-            </div>                    <div class="workcontent all active m-4">
-              <img src="./anirudhpost.jpg">
-              <div class="layer">
-                <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
-                <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
-              </div>
-            </div>
-              </div>
-            </div>
-            <button id="moreButton" class="btn btn-light" style="color: rgb(255, 0, 187); margin-top: 20px;" onclick="showMore()">More</button>
-
-            <script>
-              function showMore() {
-                var content = document.getElementById('additionalContent');
-                var button = document.getElementById('moreButton');
-                
-                if (content.style.display === 'none') {
-                  content.style.display = 'block';
-                  button.textContent = 'Show Less'; 
-                } else {
-                  content.style.display = 'none';
-                  button.textContent = 'More'; 
-                }
-              }
-            </script>
-            
-           <div class="workcontent development">
-               <h2>Development Works</h2>
-               <p>These are the development-related projects I have worked on.</p>
+    
+           <div class="workcontent all designing m-4 more-content">
+               <img src="./anirudhpost.jpg">
+               <div class="layer">
+                   <h3 style="background: transparent; margin-top: 50px;">Anirudh Poster</h3>
+                   <a href="https://bindu31.github.io/html/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
+               </div>
            </div>
-           <div class="workcontent designing">
-               <h2>Designing Works</h2>
-               <p>These are the designing-related projects I have worked on.</p>
-           </div>
-           <div class="workcontent figma">
-               <h2>Figma Works</h2>
-               <p>These are my Figma-based design works.</p>
+    
+           <div class="workcontent all figma m-4 more-content">
+               <img src="./figma.webp">
+               <div class="layer">
+                   <h3 style="background: transparent; margin-top: 50px;">Figma Design</h3>
+                   <a href="https://bindu31.github.io/figma/" class="btn btn-light" style="color: rgb(255, 0, 187);" target="_blank">Preview</a>
+               </div>
            </div>
        </div>
-   </div>
-      <script>
-                    document.querySelectorAll('.projects_filter li').forEach(tab => {
-              tab.addEventListener('click', function() {
-                  document.querySelectorAll('.projects_filter li').forEach(tab => {
-                      tab.classList.remove('active');
-                  });
-                            this.classList.add('active');
-                  const contentType = this.getAttribute('data-content');
-                  document.querySelectorAll('.workcontent').forEach(content => {
-                      content.classList.remove('active');
-                  });
-                            document.querySelector(`.workcontent.${contentType}`).classList.add('active');
-              });
-          });
-
-      </script>
+    
+       <button id="moreButton" class="btn btn-light" style="color: rgb(255, 0, 187); margin-top: 20px;" onclick="showMore()">More</button>
+    </div>
+    
+    <script>
+       
+    </script>
+       
 <!-------------------------------contact--------------------------------------->
 <div id="contact">
        <div class="container">
